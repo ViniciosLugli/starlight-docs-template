@@ -5,7 +5,7 @@ import starlightLinksValidator from 'starlight-links-validator';
 // https://astro.build/config
 export default defineConfig({
 	site: process.env.CI ? 'http://vinicioslugli.github.io' : 'http://localhost:4321',
-	base: '/starlight-docs-template/',
+	base: '/starlight-docs-template',
 	integrations: [
 		starlight({
 			title: 'Starlight Template',
@@ -18,7 +18,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [{ label: 'Example Guide', link: '/guides/example/' }],
+					items: [{ label: 'Example Guide', autogenerate: { directory: 'guides' } }],
 				},
 				{
 					label: 'Reference',
