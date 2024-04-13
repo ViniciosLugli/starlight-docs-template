@@ -6,7 +6,7 @@ import starlightImageZoom from 'starlight-image-zoom';
 // https://astro.build/config
 export default defineConfig({
 	site: process.env.CI ? 'http://vinicioslugli.github.io' : 'http://localhost:4321',
-	base: '/starlight-docs-template',
+	base: '/starlight-docs-template/',
 	integrations: [
 		starlight({
 			title: 'Starlight Template',

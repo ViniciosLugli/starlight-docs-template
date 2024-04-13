@@ -13,6 +13,10 @@ Example content for the Starlight components get from the [Starlight documentati
 npm create astro@latest -- --template starlight
 ```
 
+```bash title="Installing dependencies…"
+npm install
+```
+
 ```jsx
 # example.jsx
 
@@ -23,6 +27,23 @@ export const fileName = 'example.js';
 export const highlights = ['file', 'CMS'];
 
 <Code code={exampleCode} lang="js" title={fileName} mark={highlights} />>
+```
+
+```js title="line-markers.js" del={2} ins={3-4} {6}
+function demo() {
+	console.log('this line is marked as deleted');
+	// This line and the next one are marked as inserted
+	console.log('this is the second inserted line');
+
+	return 'this line uses the neutral default marker type';
+}
+```
+
+```js "given text"
+function demo() {
+	// Mark any given text inside lines
+	return 'Multiple matches of the given text are supported';
+}
 ```
 
 ### Cards
