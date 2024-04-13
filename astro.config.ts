@@ -4,7 +4,8 @@ import starlightLinksValidator from 'starlight-links-validator';
 
 // https://astro.build/config
 export default defineConfig({
-	base: '/docs',
+	site: process.env.CI ? 'vinicioslugli.github.io' : 'http://localhost:4321',
+	base: '/starlight-docs-template/',
 	integrations: [
 		starlight({
 			title: 'Starlight Template',
