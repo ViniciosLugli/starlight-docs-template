@@ -19,6 +19,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/houston.webp',
 			},
+			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
 					label: 'Guides',
