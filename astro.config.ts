@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
+import starlightImageZoom from 'starlight-image-zoom';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +15,9 @@ export default defineConfig({
 			},
 			editLink: {
 				baseUrl: 'https://github.com/ViniciosLugli/starlight-docs-template/tree/main',
+			},
+			logo: {
+				src: './src/assets/houston.webp',
 			},
 			sidebar: [
 				{
@@ -30,6 +34,7 @@ export default defineConfig({
 				starlightLinksValidator({
 					errorOnRelativeLinks: false,
 				}),
+				starlightImageZoom(),
 			],
 		}),
 	],
