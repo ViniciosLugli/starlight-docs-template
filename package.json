@@ -15,7 +15,7 @@
 		"astro": "^4.6.1",
 		"sharp": "^0.33.3",
 		"starlight-image-zoom": "^0.2.0",
-		"starlight-links-validator": "^0.7.1",
+		"starlight-links-validator": "^0.8.0",
 		"typescript": "^5.4.5"
 	}
 }
