@@ -14,7 +14,7 @@
 		"@astrojs/starlight": "^0.25.0",
 		"astro": "^4.6.1",
 		"sharp": "^0.33.3",
-		"starlight-image-zoom": "^0.6.0",
+		"starlight-image-zoom": "^0.7.0",
 		"starlight-links-validator": "^0.9.0",
 		"typescript": "^5.4.5"
 	}
